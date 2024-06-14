@@ -94,7 +94,7 @@ def convertDomain(domain):
     try:
         IP = socket.gethostbyname(domain)
         return IP
-    except socket.gaierror:
+    except socket.error:
         print(color.ERROR + " [!] Invalid domain name or argument!" + color.RESET)
         return None
 
@@ -118,7 +118,7 @@ def getInfo(IP, FIELDS):
 
         try:
             hostname, _, _ = socket.gethostbyaddr(IP)
-        except socket.gaierror:
+        except socket.error:
             return None
             hostname = None
     
