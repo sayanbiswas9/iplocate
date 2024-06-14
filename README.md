@@ -12,7 +12,7 @@ IPLocate is a Python-based CLI (Command-Line Interface) tool, developed by [@say
 Make sure to install _curl_ and _python_ before running these commands:
 
 ```cmd
-curl -o iplocate.py https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate
+curl -o iplocate.py https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate.py
 move iplocate.py %USERPROFILE%
 pip install requests
 setx PATH "%PATH%;%USERPROFILE%
@@ -23,7 +23,7 @@ setx PATH "%PATH%;%USERPROFILE%
 
 ```bash
 sudo apt update && sudo apt install python3 python3-pip && pip install requests
-curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate && chmod +x iplocate
+curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate.py && chmod +x iplocate
 sudo mv iplocate /usr/bin/
 ```
 
@@ -31,13 +31,13 @@ sudo mv iplocate /usr/bin/
 
 ```bash
 pkg update && pkg install curl python3 python3-pip && pip install requests
-curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate && chmod +x iplocate && mv iplocate $PREFIX/bin/
+curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate.py && chmod +x iplocate && mv iplocate $PREFIX/bin/
 ```
 
 ### Arch Linux
 
 ```bash
-curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate
+curl -o iplocate https://raw.githubusercontent.com/sayanbiswas9/iplocate/main/iplocate.py
 mkdir -p ~/.local/bin/
 chmod +x iplocate
 mv iplocate ~/.local/bin/
